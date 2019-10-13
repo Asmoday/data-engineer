@@ -1,0 +1,19 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; disabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Sun 2019-10-06 19:35:13 MSK; 2min 46s ago
+     Docs: https://docs.docker.com
+ Main PID: 20245 (dockerd)
+    Tasks: 13
+   CGroup: /system.slice/docker.service
+           └─20245 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Oct 06 19:35:09 HPNotebook dockerd[20245]: time="2019-10-06T19:35:09.838087244+03:00" level=warning msg="Your kernel does not support cgroup rt period"
+Oct 06 19:35:09 HPNotebook dockerd[20245]: time="2019-10-06T19:35:09.838106559+03:00" level=warning msg="Your kernel does not support cgroup rt runtime"
+Oct 06 19:35:09 HPNotebook dockerd[20245]: time="2019-10-06T19:35:09.840000397+03:00" level=info msg="Loading containers: start."
+Oct 06 19:35:11 HPNotebook dockerd[20245]: time="2019-10-06T19:35:11.725321192+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Oct 06 19:35:12 HPNotebook dockerd[20245]: time="2019-10-06T19:35:12.787053859+03:00" level=info msg="Loading containers: done."
+Oct 06 19:35:12 HPNotebook dockerd[20245]: time="2019-10-06T19:35:12.813724804+03:00" level=warning msg="failed to retrieve runc version: unknown output format: runc version spec: 1.0.1-dev\n"
+Oct 06 19:35:13 HPNotebook dockerd[20245]: time="2019-10-06T19:35:13.430352526+03:00" level=info msg="Docker daemon" commit=2d0083d graphdriver(s)=overlay2 version=18.09.7
+Oct 06 19:35:13 HPNotebook dockerd[20245]: time="2019-10-06T19:35:13.430577866+03:00" level=info msg="Daemon has completed initialization"
+Oct 06 19:35:13 HPNotebook dockerd[20245]: time="2019-10-06T19:35:13.811865320+03:00" level=info msg="API listen on /var/run/docker.sock"
+Oct 06 19:35:13 HPNotebook systemd[1]: Started Docker Application Container Engine.
